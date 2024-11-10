@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Data bind : Video 4 tutorial about vue js 2</title>
+    <style>
+        .fixImageSize{
+            width:200px; 
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="my-app">
+        <a v-bind:href="ulink" :title="title">{{name}}</a> <br>
+        <img :src="img" alt="" :class="{fixImageSize:isActive}">
+        <br>
+        <br>
+        <form action="" method="post">
+            <input type="text" :value="txtName" placeholder="Enter your name"><br>
+            <input type="email" :value="txtEmail" placeholder="Enter your email"><br>
+            <button type="button" name="button">submit</button>
+        </form>
+
+        <br>
+        <br>
+       <div v-html="htmlContent"> </div> 
+
+    </div>
+
+
+    <script src="video4.js"></script>
+</body>
+</html>

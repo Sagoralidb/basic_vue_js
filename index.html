@@ -14,8 +14,15 @@
     Hello I am {{ Fname}} {{Lname}}. I am {{Age}} years old.
     {{ message }}
   </div>
+<br><br>
 
-
+  <div id="myData">
+    Message : {{message}},<br>
+    Name: {{name}},<br>
+    Education: {{education}},<br>
+    Purpose:: {{ run(' We are new learner') }}   <!-- Parameter passing to methods  -->
+  
+  </div>
 
   <script src="app.js"></script>
 </body>

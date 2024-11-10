@@ -8,3 +8,17 @@ var myVar =  new Vue({
       Age: 30,
     }
   });
+
+  new Vue({
+    el: "#myData",
+    data: {
+        message: 'We are students',
+        name: 'Rony',
+        education: 'CSE'
+    },
+    methods:{
+        run : function(text){
+           return "We are learning Vue.js 2" +text;
+        }
+    }
+  });

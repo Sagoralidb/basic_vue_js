@@ -17,8 +17,11 @@ var myVar =  new Vue({
         education: 'CSE'
     },
     methods:{
-        run : function(text){
-           return "We are learning Vue.js 2" +text;
-        }
+        run : function(text, name){ // multiple parameter passing
+           return "We are learning Vue.js 2" +text+", "+name;
+        },
+       welcome:function() {
+        return "You are welcome";
+       }
     }
   });

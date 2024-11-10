@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue2@1.0.0/.eslintrc.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+  
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="myapp">
+    Hello I am {{ Fname}} {{Lname}}. I am {{Age}} years old.
+    {{ message }}
+  </div>
+
+
+
+  <script>
+     var myVar =  new Vue({
+        el: '#myapp',
+
+        data:{
+          message: "I am new",
+          Fname: 'Sagor',
+          Lname: 'Ali',
+          Age: 30,
+        }
+      });
+  </script>
+</body>
+</html>

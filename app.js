@@ -1,3 +1,4 @@
+
 var myVar =  new Vue({
     el: '#myapp',
 
@@ -20,8 +21,12 @@ var myVar =  new Vue({
         run : function(text, name){ // multiple parameter passing
            return "We are learning Vue.js 2" +text+", "+name;
         },
-       welcome:function() {
-        return "You are welcome";
+       welcome:function(name) {
+        return "You are welcome"+" "+name+"."
+       },
+       
+       access:function(){
+        return 'Hello : '+ this.name+", You are education is :  "+this.education+" and You message is : "+this.message;
        }
     }
   });

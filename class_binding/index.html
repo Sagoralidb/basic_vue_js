@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Document</title>
+    <style>
+        .boxDesign{
+            height: 200px; 
+            width: 200px; 
+            border: 1px solid #111; 
+            background: #def;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="my-app">
+        <div v-bind:class="{boxDesign:isActive}">
+            <h4>Class binding</h4>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

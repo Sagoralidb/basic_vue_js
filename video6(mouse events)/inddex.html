@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Mouse events: mouse hover, muse out, mouse move</title>
+</head>
+<body>
+       <div id="my-app">
+
+            <div class="mouse-area" v-on:mousemove="moveFunction" style="height: 400px; width: 500px; border:1px solid #111; background: #def;">
+                X:{{x}} <br>
+                Y: {{y}}
+            </div>
+           
+            X:{{x}} <br>
+            Y: {{y}}
+       </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

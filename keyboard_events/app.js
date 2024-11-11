@@ -5,7 +5,13 @@ var myapp = new Vue({
    } ,
    methods:{
     keyPressFunction:function(event){
-        console.log(event.key)
+        console.log(event.key); // key press event
+    },
+    keyupFunction:function(event) {
+        console.log("key up pressed ........"); // key up event
+    },
+    keydownFunction:function(event) {
+        console.log(event); // key up event
     }
    }
 });

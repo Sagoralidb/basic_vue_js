@@ -8,8 +8,16 @@
 </head>
 <body>
    
-    <div id="my-app">
+    <div id="my-app">Key press:
       <input type="text" v-on:keypress="keyPressFunction" placeholder="Key pressed">   <!-- key press event -->
+      <br>
+      <br>
+      <br>Key up:
+    <input type="text" @keyup="keyupFunction" placeholder="key upp... ">
+    <br>
+      <br>
+      <br>Key down:
+    <input type="text" @keydown="keydownFunction" placeholder="key down... ">
     </div>
     <script src="app.js"></script>
 </body>

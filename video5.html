@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <div id="my-app">
+        <h3>Counter : {{ counter }}</h3>
+
+        <button type="button" v-on:click="increment(1)" name="button">increment by 1</button>
+        <button type="button" v-on:click="decrement(1)" name="button">decrement by 1</button>
+        <br><br>
+        
+        <button type="button" v-on:dblclick="increment(5)" name="button">increment by 5</button>
+        <button type="button" v-on:dblclick="decrement(5)" name="button">decrement by 5</button>
+        <br><br>
+     </div>
+
+    <script src="video5.js"></script>
+</body>
+</html>

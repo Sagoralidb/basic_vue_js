@@ -5,10 +5,10 @@ var myapp = new Vue({
     },
     methods:{
         increment:function(inc){
-            this.counter = this.counter + inc;
+            this.counter += inc;
         },
         decrement:function(dec){
-            this.counter = this.counter - dec;
+            this.counter -= dec;
         }
     }
 });

@@ -10,11 +10,11 @@
      <div id="my-app">
         <h3>Counter : {{ counter }}</h3>
 
-        <button type="button" v-on:click="increment(1)" name="button">increment by 1</button>
+        <button type="button" @click="increment(1)" name="button">increment by 1</button>
         <button type="button" v-on:click="decrement(1)" name="button">decrement by 1</button>
         <br><br>
         
-        <button type="button" v-on:dblclick="increment(5)" name="button">increment by 5</button>
+        <button type="button" @dblclick="increment(5)" name="button">increment by 5</button>
         <button type="button" v-on:dblclick="decrement(5)" name="button">decrement by 5</button>
         <br><br>
      </div>

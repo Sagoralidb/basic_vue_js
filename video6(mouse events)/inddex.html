@@ -16,6 +16,11 @@
            
             X:{{x}} <br>
             Y: {{y}}
+<br>
+<!-- Mouse over effect -->
+            <button type="button" name="button" v-on:mouseover="overFunction" style="height: 50px; width: 350px;">Mouse move</button><br><br>
+            <button type="button" name="button" v-on:mouseout="outFunction" style="height: 50px; width: 350px;">Mouse out</button><br><br>
+            <button type="button" name="button" v-on:mouseout="outFunction" @mouseover="overFunction" style="height: 50px; width: 350px;">Mouse Over & out</button>
        </div>
 
     <script src="app.js"></script>

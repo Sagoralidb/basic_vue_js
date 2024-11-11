@@ -13,6 +13,12 @@ var mouseEvent = new Vue({
             // console.log(event)
             this.x =event.offsetX
             this.y =event.offsetY
+        },
+        overFunction:function() {
+            alert('In: This is about mouseOver message');
+        },
+        outFunction:function() {
+           alert('Out: This is about mouse out message !');
         }
     }
 });

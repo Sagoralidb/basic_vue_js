@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Event Modifiers -once, prevent, stop, capture</title>
+</head>
+<body>
+        <h1>Event Modifiers 4 type of modifier-once, prevent, stop, capture</h1>
+
+
+        <div id="my-app">
+            Counter : {{ counter }}
+            <br>
+            <br>
+            <button v-on:click="increment">Click by +1</button>
+            <button v-on:click="decrement">Click by -1</button>
+            <br>
+            <br>
+            <button v-on:click.once="increment">Click by +1</button>  <!-- modify default behaviors of event modifiers...  -->
+            <br>
+            <br>
+            <a @click.prevent href="https://www.w3schools.com/jsref/event_onkeyup.asp">Go</a>
+
+            <!-- use prevent modifier to  modify the default submission-->
+             <form action="" @click.prevent>
+                <input type="text" placeholder="Input name" name="" id="">
+
+                <button type="submit">submit</button>
+             </form>
+             <br>
+             <br>
+             <div id="parent-div" @click="ParentClickFunction">
+                    <button id="child-div" v-on:click.stop="ParentClickFunction">click</button> <!--Stop modifier-->
+             </div>
+             <br>
+             <br>
+             child : {{ message }}
+             <div class="parent-class" v-on:click.capture="parentClassFunction"> <!--capture modifier-->
+                <button @click="childClassFunction">Click me again</button>
+             </div>
+
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>

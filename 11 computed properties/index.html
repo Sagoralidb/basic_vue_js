@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>About Computed Properties of VueJs in details</title>
+</head>
+<body>
+    <div id="my-app">
+
+        <input type="text" placeholder="Enter your first name" v-model="firstName">
+        <input type="text" placeholder="Enter your last name" v-model="lastName">
+        Your Full name : {{ fullName }} <br><br><br>
+        <h4>Meter to centimeter</h4>
+      Meter Value :<input type="text" v-model="meter" placeholder="Insert your miter value"> Meter <br><br>
+      Converted value in centimeter : {{ getCentimeterValue }} centimeter
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

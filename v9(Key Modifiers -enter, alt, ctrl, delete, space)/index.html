@@ -12,6 +12,11 @@
         Text1 <input type="text" @keypress="keypressFunctions"><br><br>
         Two-way data binding: <input type="text" v-model="text"><br>
        Reflect:  {{text}}
+
+       <form action="">
+        Name:<input type="text" name="name" v-model="name"> {{name}} <br><br><br>
+        Email<input type="email" name="email" v-model="email"> {{email}}
+       </form>
     </div>
 
     <script src="app.js"></script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Concept of adding Dynamic classes in VueJs</title>
+    <style>
+        .redClass{
+            color:red;
+            border: 1px solid #111;
+            background-color:aliceblue;
+        }
+        button{
+            color:blue;
+            border: 1px solid blue;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="my-app">
+        <button  :class="{ redClass:isActive }" v-on:click="ToggleFunction">Toggle Class1</button>
+        <button  :class="{ redClass:isActive }" v-on:click="isActive=!isActive">Toggle Class2</button>
+      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

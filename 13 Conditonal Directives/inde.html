@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <title>Conditional v-if, v-else, v-else-if, v-show</title>
+</head>
+<body>
+    
+    <div id="my-app">
+        <p v-if="false">Demo1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugiat.</p>
+        <p v-else>Demo2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, assumenda.</p>
+
+
+
+        <br>
+        <br>
+            <h1 v-if="isActive">This is V-if statement</h1>
+            <h1 v-show="isActive">This is V-show statement</h1>
+        <br>
+        <br>
+        <button @click="incrementFunction">Increment by 1</button>
+        <br>
+        <br>
+        Value : {{ count }}
+        <br>
+        <h3 v-if="count==1">Now value = 1</h3>
+        <h3 v-else-if="count==2">Now value = 2</h3>
+        <h3 v-else-if="count==3">Now value = 3</h3>
+        <h3 v-else-if="count==4">Now value = 4</h3>
+        <h3 v-else>This is other value</h3>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
